@@ -26,3 +26,14 @@ def website_info(request):
 
 def website_home(request):
     return render(request, 'website_home.html')
+
+
+def category_detail_view(request, category_slug):
+    return render(request, 'category_detail.html', {'category_name': category_slug})
+
+
+def category_detail_view_id(request, category_id):
+    return render(request, 'category_detail_id.html', {'category_id': category_id})
+
+def category_detail_view_name(request, category_isim):
+    return render(request, 'category_detail_name.html', {'category_isim': category_isim})
